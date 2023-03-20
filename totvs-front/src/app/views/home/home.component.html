@@ -1,0 +1,16 @@
+<mat-toolbar color="gray">
+    <mat-toolbar-row>
+      <span class="adjust-color">Importação de usuários</span>
+      <span class="spacer"></span>
+      <button class="adjust-space" mat-raised-button (click) = "newUser()">
+        Novo usuário
+        <mat-icon>add</mat-icon>
+      </button>
+      <input style="display: none" type="file" accept=".json" 
+       (change)="importUsers($event)" #fileinput>
+      <button type="button" class="adjust-space" mat-raised-button (click)="fileinput.click()"> Importar usuário(s) 
+        <mat-icon>import_export</mat-icon>
+      </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<app-user-list></app-user-list>

@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Erro na importação!</h1>
+<div mat-dialog-content>
+    Os seguintes usuários já possuem cadastro:
+    <br><br>
+    <tr *ngFor="let u of users">
+       - {{u.name}} ({{u.docNumber}})
+    </tr>
+    <br>
+    Deseja continuar?
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="cancel()">Cancelar</button>
+    <button mat-raised-button color="primary" (click)="saveWithErrors()">Confirmar</button>
+</div>

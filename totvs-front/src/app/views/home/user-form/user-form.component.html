@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Cadastrar</h1>
+<div mat-dialog-content>
+    <form class="example-form" [formGroup]="registerForm">
+        <div class="row">
+            <mat-form-field class="full-width">
+                <mat-label>Nome:</mat-label>
+                <input matInput placeholder="Nome" formControlName="name" name="name">
+                <mat-error *ngIf="!this.registerForm.valid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field class="full-width">
+                <mat-label>E-mail:</mat-label>
+                <input matInput placeholder="email@exemplo.com" formControlName="email" name="email">
+                <mat-error *ngIf="!this.registerForm.valid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field class="full-width">
+                <mat-label>Número do documento:</mat-label>
+                <input matInput placeholder="Documento" formControlName="docNumber" name="docNumber"
+                maxlength="10">
+                <mat-error *ngIf="!this.registerForm.valid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="cancel()">Cancelar</button>
+    <button mat-raised-button color="primary" (click)="createUser()">Cadastrar</button>
+</div>

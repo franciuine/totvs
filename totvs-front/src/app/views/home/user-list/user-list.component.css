@@ -1,0 +1,38 @@
+table {
+    width: 97%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mat-icon {
+    color:rgb(66, 66, 66);
+}
+
+.center {
+    text-align: center;
+}
+
+.mat-paginator {
+    margin-right: 5px;
+    margin-left: 690px;
+}
+
+.mat-form-field {
+    margin-left: 20px;
+}
+
+.inline-content {
+    margin-top: 5px;
+    display: inline-flex;
+}
+
+.align-action {
+    padding-left: 40%;
+}
+
+.format-text {
+    color:rgb(66, 66, 66);
+    margin-left: 25px;
+    font-size: large;
+}
